@@ -1,0 +1,120 @@
+.welcome-page{
+    font-family: Cursive;
+    width: 96.7%;
+}
+.welcome-page-con{
+    background-color: rgba(0, 0, 0, 0.886);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-page-con p{
+    width: 60%;
+    font-weight: 500;
+    font-size: 220%;
+    color:rgb(183, 229, 247);
+}
+.welcome-page-con img{
+    width: 30%;
+}
+.welcome-feat img{
+    width: 15%;
+    border-radius: 120%;
+}
+.why-feat img{
+    width: 20%;
+    border-radius: 20px;
+}
+.welcome-feat-con{
+    background-color: rgba(250, 250, 250, 0.861);
+}
+.welcome-feat-con button{
+    background-color: rgba(0, 0, 0, 0.543);
+    width: 20%;
+}
+.welcome-feat-con button:hover{
+    background-color: rgba(0, 0, 0, 0.662);
+    color: white;
+}
+.welcome-feat-con,.welcome-feat,.why-feat-con,.why-feat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-feat-con label,.why-feat-con label{
+    font-size: xx-large;
+    color: rgb(31, 31, 31);
+}
+.welcome-feat p,.why-feat p{
+    width: 70%;
+    font-size: large;
+}
+.welcome-feat,.why-feat{
+    /* border: 2px solid green; */
+    padding: 25px;
+    width: 80%;
+    padding-right: 0px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.why-feat-con{
+    background-color: rgba(37, 41, 39, 0.952);
+}
+.why-feat-con,.why-feat-con label{
+    color: antiquewhite;
+}
+.welcome-page-con,.welcome-feat-con,.why-feat-con{
+    /* border: 3px solid green; */
+    width: 100%;
+    padding: 21px;
+}
+.welcome-page-con{
+    padding-bottom: 48px;
+
+}
+
+@media screen and (max-width:900px) {
+    .welcome-page-con p{
+        font-size: 180%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .welcome-page-con p{
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .welcome-page-con p{
+        font-size: 110%;
+    }
+    .welcome-feat p{
+        font-size: 80%;
+    }
+   
+    .why-feat p{
+        font-size: 80%;
+    }
+    .why-feat img{
+        width: 25%;
+    }
+    .welcome-feat-con label{
+        font-size: 150%;
+    }
+    .welcome-feat-con button{
+        font-size: 100%;
+        width: 70%;
+    }
+    .why-feat-con label{
+        font-size: 130%;
+    }
+   
+    .welcome-feat img{
+        width: 25%;
+        border-radius: 120%;
+    }
+}
+

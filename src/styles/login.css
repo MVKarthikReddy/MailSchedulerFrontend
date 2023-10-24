@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+
+.register-container{
+    /* font-size: 0.1rem; */
+    width: 99.7%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.login-con{
+  width: 65%;
+}
+
+.login-con,.register-sender,.login-sender{
+  display: flex;
+  /* border: 2px solid gray; */
+  align-items: center;
+  justify-content: center;
+}
+.register-sender,.login-sender{
+  flex-direction: column;
+  justify-content: center;
+}
+.register-sender,.login-sender{
+  background: #ffffffbf;
+  /* border: 2px solid green; */
+  height: 491.4px;
+  width: 40%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.register-sender img{
+  width: 60%;
+  border-radius: 10px;
+}
+.login-sender img{
+  width: 55%;
+  border-radius: 10px;
+}
+.login-sender{
+  height: 521px;
+  width: 40%;
+}
+.register-sender,.wrapper,.login-sender{
+  margin-top:10% ;
+}
+.register-sender label{
+  font-weight: 500;
+}
+
+.wrapper{
+  width: 40%;
+  padding: 2rem 0 1rem 0;
+  background: #ffffffbf;
+  border-radius: 0px 10px 10px 0px;
+  text-align: center;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+h1{
+  font-size: 2rem;
+  color: #07001f;
+}
+p{
+  margin-bottom: 1.7rem;
+}
+form input{
+  width: 85%;
+  outline: none;
+  border: none;
+  background: #ffffff;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.recover{
+  text-align: right;
+  font-size: 0.8rem;
+  margin: 0.2rem 1.7rem 0 0;
+}
+.recover a{
+  text-decoration: none;
+  color: #07001f;
+}
+button{
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  padding: 8px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 85%;
+  background: rgba(30, 31, 32, 0.676);
+  color: #fff;
+  cursor: pointer;
+}
+button:hover{
+  background: rgba(0, 0, 0, 0.632);
+  color: rgb(221, 227, 234);
+}
+.or{
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+}
+.icon{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+  
+  width: 25%;
+  color: #445f9b;
+  padding: 0.3rem 1.5rem;
+  border-radius: 7px;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  border: 1px solid #778aa0;
+}
+.icons:hover{
+  color: #fdfcfc !important;
+  background: #272b34;
+  transition: 1s;
+}
+
+.not-member{
+  font-size: 0.8rem;
+  margin-top: 1.4rem;
+}
+.not-member span{
+  color: tomato;
+  text-decoration: none;
+  cursor: pointer;
+}
+span:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 850px) {
+
+  .wrapper{
+    width: 50%;
+  }
+  .login-con{
+    margin-top: 5%;
+    width: 80%;
+  }
+  
+}

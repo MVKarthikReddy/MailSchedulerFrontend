@@ -1,0 +1,87 @@
+.gap {
+    height: 60px;
+}
+
+.schedule-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid green; */
+
+}
+
+.schedule-title label{
+    padding-top: 5px;
+}
+
+.schedule-container{
+    margin-top: 30px;
+    /* border: 1px solid green; */
+    border-radius: 10px;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.schedule-title,.schedule-body,.schedule-time,.schedule-update{
+    /* border: 1px solid firebrick; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule-title label span,.schedule-body label span,.schedule-time label span{
+    text-decoration: none;
+    color: rgb(163, 88, 255);
+    font-size: large;
+    font-weight: 550;
+}
+
+.schedule-update button{
+    width: 30%;
+}
+
+.update-but{
+    background-color: rgb(64, 222, 64);
+}
+
+.delete-but{
+    background-color: rgb(234, 47, 47);
+}
+
+.update-but:hover{
+    color: white;
+    background-color: rgb(55, 158, 55);
+}
+
+.delete-but:hover{
+    color: white;
+    background-color: rgb(178, 42, 42);
+}
+
+.schedule-field{
+    width: 100%;
+}
+
+.textarea textarea{
+    height: 100px;
+}
+
+.schedule-body div span{
+    color: red;
+}
+
+
+.schedule-form{
+    width: 100%;
+}
+@media screen and (max-width:750px) {
+    .schedule-title{
+        display: flex;
+        flex-direction: column;
+    }
+}

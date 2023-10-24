@@ -1,0 +1,56 @@
+.settings-page,.settings-img{
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.settings-page{
+    height: 100%;
+}
+
+.settings-page-con{
+    width: 100%;
+}
+
+.settings-img img{
+    background-color: rgba(9, 9, 9, 0.557);
+    width: 30%;
+    padding: 7%;
+    border-radius: 50%;
+}
+
+.settings-user-details{
+    /* border: 2px solid green; */
+    width: 70%;
+}
+
+.setting-profile-field,.setting-buttons{
+    /* border: 2px solid green; */
+    padding: 4%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.setting-profile-field label{
+    padding: 10px;
+    color: White;
+    /* border: 2px solid gray; */
+}
+.setting-profile-field input{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 3px;
+}
+
+.setting-buttons-con{
+    /* border: 2px solid green; */
+    width: 70%;
+}
+
+.setting-buttons button{
+    width: 30%;
+}

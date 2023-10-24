@@ -1,0 +1,137 @@
+.footer-con,.list-items{
+    color: rgba(195, 189, 189, 0.662);
+    background-color: #000000b4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: 2px solid red; */
+    padding-bottom: 50px;
+}
+.list-items {
+    width: 75%;
+    padding: 10px;
+    background-color: rgba(45, 45, 45, 0);
+}
+.list-items label{
+    padding: 6px;
+}
+h3{
+    color: rgba(237, 231, 231, 0.847);
+}
+
+.footer-con .horizontal{
+    width: 80%;
+}
+
+.footer-title{
+    font-size: 150%;
+    font-weight: 500;
+    color: aliceblue;
+    font-family: cursive;
+}
+
+.feedback-con{
+    margin-top: 20px;
+    width: 80%;
+}
+.feedback-area{
+    background-color: rgb(230, 227, 222);
+    width: 100%;
+    height: 100%;
+    color: rgb(63, 60, 60);
+    padding: 1%;
+    border-radius: 10px ;
+}
+
+.footer-features{
+    /* margin-top: 3%; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.about-us,.services,.social-media{
+    width: 18%;
+}
+
+.contact-us{
+    width: 40%;
+}
+
+.feat ul{
+    text-align: center;
+    /* margin-top: 5%; */
+}
+.contact-us ul{
+    /* margin-top: 2%; */
+}
+.feat ul li{
+    list-style-type: none;
+    font-size: 100%;
+    cursor: pointer;
+    padding: 3%;
+}
+.contact-us ul li{
+    padding: 1.5%;
+}
+.feat ul li:hover{
+    color: orange;
+    text-decoration: underline;
+}
+.feat ul li label{
+
+    font-size: medium;
+   
+}
+.feat{
+    /* border: 2px solid green; */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+@media screen and (max-width:700px) {
+
+    .footer-features,.feat,.feat ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    .about-us{
+        height: 110px;
+    }
+
+    .feat ul{
+        width: 70%;
+        margin: 3%;
+    }
+    .feat{
+        width:90% ;
+        margin: 2%;
+    }
+    .footer-title{
+        font-size: 120%;
+        font-weight: 500;
+        color: aliceblue;
+        font-family: cursive;
+    }
+    
+}
+
+@media screen and (max-width:460px){
+    .footer-title{
+        font-size: 100%;
+        font-weight: 500;
+        color: aliceblue;
+        font-family: cursive;
+    }
+}
