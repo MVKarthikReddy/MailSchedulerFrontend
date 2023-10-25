@@ -25,7 +25,7 @@ export default function Navbar() {
 				</div>
 	
 				
-					<div className="nav-items-container" >
+					<div className={menuOpen?"nav-items-container burger-items-container":"nav-items-container"} >
 						<ul className={menuOpen?"nav-items burger-items":"nav-items"}>
 							<li onClick={
 								() => navigate('/home')

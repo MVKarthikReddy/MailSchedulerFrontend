@@ -14,7 +14,7 @@
     width: 70%;
     padding: 20px;
     margin-bottom: 30px;
-    background-color: rgba(198, 191, 191, 0.55);
+    background-color: rgba(183, 180, 180, 0.55);
 }
 
 .schedule-container,.schedule-body{
@@ -57,6 +57,8 @@ li{
     width: 30%;
 }
 
+
+
 .label{
     font-weight: 600;
 }
@@ -69,4 +71,19 @@ span{
     .schedule-body{
         width: 70%;
     }
+}
+
+@media screen and (max-width:600px){
+    .schedule-body{
+        width: 90%;
+    }
+    .schedule-form .schedule-container{
+        border: 1px solid green;
+        width: 80%;
+    }
+    .schedule-button{
+        width: 50%;
+    }
+   
+   
 }

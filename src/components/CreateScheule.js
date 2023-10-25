@@ -23,29 +23,34 @@ const CreateSchedule = () => {
         const token = localStorage.getItem('token')
         const headers = { 'Authorization': `Bearer ${token}` };
 
+        var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+
         // console.log(localStorage.getItem('token'))
         const {from,to,cc,bcc,subject,body,date,time} = details
         details.time = `${time}:00`
 
-        if(from=="" || to=="" || subject=="" || body=="" || date=="" || time==""){
+        if(from.match(regEmail) || to.match(regEmail) || subject=="" || body=="" || date=="" || time==""){
 
-            alert("Fill all the important details.")
-            Window.location.reload()
+            alert("Enter valid details.")
 
         }
+        else{
 
-        axios.post(
-            'https://mailschedulerbackendservice.onrender.com/api/schedules/',
-             details,
-            {
-                headers : { 
-                    Authorization : `Bearer ${token}`
+            axios.post(
+                'https://mailschedulerbackendservice.onrender.com/api/schedules/',
+                 details,
+                {
+                    headers : { 
+                        Authorization : `Bearer ${token}`
+                    }
                 }
-            }
-        ).then((res) => {
-            alert("Schedule is Created successfully")
-            window.location.reload()
-        })
+            ).then((res) => {
+                alert("Schedule is Created successfully")
+                window.location.reload()
+            })
+            
+        }
+
     }
     return(
         

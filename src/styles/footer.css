@@ -134,4 +134,19 @@ h3{
         color: aliceblue;
         font-family: cursive;
     }
+    
+}
+
+
+
+@media screen and (max-width:350px){
+    .footer-con{
+        width: 108.5%;
+    }
+}
+
+@media screen and (max-width:279px){
+    .footer-con{
+        width: 100.5%;
+    }
 }

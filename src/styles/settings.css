@@ -54,3 +54,22 @@
 .setting-buttons button{
     width: 30%;
 }
+
+@media screen and (max-width:300px) {
+
+    .setting-buttons button{
+        width: 40%;
+        font-size: 80%;
+    }
+    .setting-profile-field label{
+        padding: 10px;
+        color: White;
+        /* border: 2px solid gray; */
+    }
+    .setting-profile-field input{
+        padding: 2px;
+        color: rgb(13, 13, 13);
+        /* border: 2px solid gray; */
+    }
+    
+}

@@ -23,13 +23,39 @@ export const Register = () => {
 
         e.preventDefault();
 
-        axios.post(
-            'https://mailschedulerbackendservice.onrender.com/api/users/register/',
-            details
-        ).then((res) => {
-            console.log(res.data)
-            navigate('/')
-        })
+        var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+        var regPass=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,30}$/;  
+        var regName = /(^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z]$)/; 
+
+        if(!(details.username).match(regName))
+        {
+            alert("Enter a proper name")
+            // window.location.reload()
+        }
+        else if(!(details.email).match(regEmail)){
+            alert("Enter a valid email")
+            // window.location.reload()
+        }
+        else if(!(details.password).match(regPass)){
+            alert("Enter proper password.\nPassword must contain\n\nMin 1 uppercase letter.\nMin 1 lowercase letter.\nMin 1 special character.\nMin 1 number.\nMin 8 characters.\nMax 30 characters.")
+            // window.location.reload()
+        }
+        else if(details.password !== details.confirmPass)
+        {
+            alert("password and conform password must match")
+            // window.location.reload()
+        }
+        else{
+            axios.post(
+                'https://mailschedulerbackendservice.onrender.com/api/users/register/',
+                details
+            ).then((res) => {
+                console.log(res.data)
+                navigate('/')
+            })
+        }
+
+       
     }
 
   return (

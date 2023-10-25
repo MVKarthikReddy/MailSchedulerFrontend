@@ -52,6 +52,11 @@
 	color: rgb(103, 200, 230);
 }
 
+.nav-items li{
+	/* border: 1px solid green; */
+	text-align: center;
+}
+
 .profile{
 	display: flex;
 	position: absolute;
@@ -68,24 +73,13 @@
 
 @media screen and (max-width: 800px) {
 
-	.nav-items li,.nav-profile li{
+	.nav-items,.nav-profile li,.burger-profile{
 		display: none;
 	}
  
-	.burger-items,.burger-profile{
-		position: absolute;
-		width: 100%;
-		left: 0;
-
-		top: 68%;
+	.burger-items{
 		display: flex;
 		flex-direction: column;
-        /* border: 2px solid blue; */
-	}
-
-	.burger-profile{
-		top:352%;
-        /* border: 2px solid blue; */
 	}
 
 	.burger-items li,.burger-profile li{
@@ -115,10 +109,11 @@
 
 	.nav-logo{
 		position: absolute;
-		left: 5%;
+		left: 0%;
 	}
 	
 	.menu-container{
+		/* border: 2px solid red; */
 		color: rgb(113, 188, 250);
 		position: absolute;
 		display: block;	
@@ -126,4 +121,13 @@
 		top: 35%;
 		cursor: pointer;
 	}
+
+	.burger-items-container{
+		position: absolute;
+		width: 100%;
+		left: -15px;
+		top: 33px;
+	}
+	
+	
   }

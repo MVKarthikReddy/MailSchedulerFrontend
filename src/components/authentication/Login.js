@@ -22,24 +22,33 @@ export const Login = () => {
     const signInUser = (e) => {
         e.preventDefault();
 
-        axios.post(
-            'https://mailschedulerbackendservice.onrender.com/api/users/login/',
-             details
-        ).then((res) => {
+        if(details.email == "" && details.password=="")
+        {
+            alert("Enter all the details")
+        }
+        else{
 
-            if(res.data.msg)
-            {
-                alert(res.data.msg)
-                navigate('/register')
-            }
-            else{
+            axios.post(
+                'https://mailschedulerbackendservice.onrender.com/api/users/login/',
+                 details
+            ).then((res) => {
+    
+                if(res.data.msg)
+                {
+                    alert(res.data.msg)
+                    navigate('/register')
+                }
+                else{
+    
+                    localStorage.setItem('token', (res.data.accessToken))
+                    navigate('/home')
+    
+                }
+                
+            })
 
-                localStorage.setItem('token', (res.data.accessToken))
-                navigate('/home')
-
-            }
-            
-        })
+        }
+        
     }
 
   return (

@@ -54,7 +54,7 @@ const settings = () => {
     <div>
       <Navbar />
       <SettingsPage />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -143,6 +143,8 @@ span:hover{
 
 @media screen and (max-width: 850px) {
 
+  
+
   .wrapper{
     width: 50%;
   }
@@ -151,4 +153,20 @@ span:hover{
     width: 80%;
   }
   
+}
+
+@media screen and (max-width: 500px){
+  .register-sender,.login-sender{
+    display: none;
+  }
+  .wrapper{
+    margin-top: 60px;
+    width: 95%;
+    border-radius: 10px;
+  }
+  .wrapper form input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+  }
 }
